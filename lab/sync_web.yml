@@ -1,0 +1,7 @@
+- hosts: web
+  tasks:
+    - name: "61070211"
+      replace:
+        path: /var/www/default/index.html
+        regexp: "Hello World!!"
+        replace: "Open by {{ inventory_hostname }}"
